@@ -6,9 +6,15 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
+    "@graphql-tools/schema": "^9.0.14",
+    "@sap-cloud-sdk/http-client": "^2.14.0",
     "@sap/cds": "^6",
+    "@sap/cds-odata-v2-adapter-proxy": "^1.9.18",
     "cors": "^2.8.5",
-    "express": "^4"
+    "dotenv": "^16.0.3",
+    "express": "^4",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.6.0"
   },
   "devDependencies": {
     "sqlite3": "^5.0.4"
@@ -45,6 +51,9 @@
     }
   },
   "cds": {
+    "features": {
+      "graphql": true
+    },
     "requires": {
       "sapbackend": {
         "kind": "odata-v2",
