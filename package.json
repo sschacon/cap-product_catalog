@@ -20,7 +20,8 @@
     "sqlite3": "^5.0.4"
   },
   "scripts": {
-    "start": "cds watch"
+    "start": "cds watch",
+    "watch-product": "cds watch --open product/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "engines": {
     "node": "^16.15"
@@ -65,5 +66,9 @@
         }
       }
     }
-  }
+  },
+  "sapux": [
+    "app/product",
+    "app/product"
+  ]
 }
