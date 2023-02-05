@@ -52,6 +52,14 @@
     }
   },
   "cds": {
+    "i18n": {
+      "default_language": "es",
+      "folders": [
+        "_i18n",
+        "i18n",
+        "assets/i18n"
+      ]
+    },
     "features": {
       "graphql": true
     },
